@@ -783,6 +783,10 @@ ul {
     transform: translateY(-50%);
   }
 
+  .hero-label-top {
+    top: 32%;
+  }
+
   .hero-image-wrap {
     width: clamp(240px, 75vw, 380px);
     bottom: -2%;
