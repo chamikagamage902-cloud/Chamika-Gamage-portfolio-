@@ -1070,11 +1070,11 @@ body:hover .cursor-ring {
 
   0%,
   100% {
-    box-shadow: 0 0 60px rgba(123, 47, 255, .3);
+    box-shadow: 0 0 50px rgba(255, 221, 0, .25);
   }
 
   50% {
-    box-shadow: 0 0 90px rgba(123, 47, 255, .6);
+    box-shadow: 0 0 80px rgba(255, 221, 0, .5);
   }
 }
 
