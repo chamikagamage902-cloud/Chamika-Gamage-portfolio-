@@ -927,7 +927,7 @@ body:hover .cursor-ring {
 /* ── TYPED TEXT ──────────────────────────────────────── */
 .hero-typed-wrap {
   position: absolute;
-  top: 65%;
+  top: 88%;
   left: 50%;
   transform: translateX(-50%);
   z-index: 5;
