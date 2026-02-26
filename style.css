@@ -782,9 +782,8 @@ ul {
   }
 
   .hero-image-wrap {
-    width: clamp(280px, 85vw, 450px);
-    bottom: -5%;
-    /* shift down slightly to maximize size without overlap */
+    width: clamp(240px, 75vw, 380px);
+    bottom: -2%;
   }
 
   .cursive-label {
