@@ -779,12 +779,13 @@ ul {
 
   .hero-text-bg {
     font-size: clamp(3rem, 12vw, 5.5rem);
-    top: 40%;
+    top: 45%;
     transform: translateY(-50%);
   }
 
   .hero-label-top {
-    top: 32%;
+    top: 45%;
+    transform: translate(-50%, -150%);
   }
 
   .hero-image-wrap {
