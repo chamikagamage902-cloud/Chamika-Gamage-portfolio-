@@ -251,12 +251,8 @@ hamburger.addEventListener('click', openMob);
 closeMenu.addEventListener('click', closeMob);
 overlay.addEventListener('click', closeMob);
 
-/* ── 14. HERO IMAGE PARALLAX ─────────────────────────── */
-const heroImg = document.getElementById('heroImg');
-window.addEventListener('scroll', () => {
-  if (!heroImg) return;
-  heroImg.style.transform = `translateY(${-window.scrollY * 0.12}px)`;
-}, { passive: true });
+/* ── 14. HERO IMAGE PARALLAX (Removed for Stability) ── */
+// hero parallax logic removed per user request
 
 /* ── 15. CONTACT FORM SUBMIT ─────────────────────────── */
 const form = document.getElementById('contactForm');

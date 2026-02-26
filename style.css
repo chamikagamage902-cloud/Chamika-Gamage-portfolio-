@@ -282,7 +282,7 @@ ul {
   left: 50%;
   transform: translateX(-50%);
   z-index: 4;
-  width: clamp(180px, 26vw, 360px);
+  width: clamp(240px, 35vw, 480px);
   display: flex;
   align-items: flex-end;
   animation: fadeSlideUp .9s .1s ease both;
@@ -780,7 +780,7 @@ ul {
   }
 
   .hero-image-wrap {
-    width: clamp(140px, 45vw, 240px);
+    width: clamp(220px, 65vw, 340px);
   }
 
   .cursive-label {
