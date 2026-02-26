@@ -307,19 +307,7 @@ ul {
   pointer-events: none;
 }
 
-/* hero bottom labels */
-.hero-bottom {
-  position: absolute;
-  bottom: 0.8rem;
-  left: 1.5rem;
-  right: 1.5rem;
-  display: flex;
-  justify-content: space-between;
-  font-size: 0.78rem;
-  color: var(--text-muted);
-  z-index: 3;
-  letter-spacing: 1px;
-}
+/* hero bottom labels removed */
 
 /* hero footer */
 .hero-footer {
@@ -939,7 +927,7 @@ body:hover .cursor-ring {
 /* ── TYPED TEXT ──────────────────────────────────────── */
 .hero-typed-wrap {
   position: absolute;
-  bottom: 3rem;
+  top: 65%;
   left: 50%;
   transform: translateX(-50%);
   z-index: 5;
