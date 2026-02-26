@@ -15,7 +15,7 @@
   const set = (id, val) => { const el = document.getElementById(id); if (el) el.textContent = val; };
   set('ageDisplay', age);
   set('ageInline', age);
-  set('yearsExp', Math.max(1, age - 15) + '+');
+  set('yearsExp', Math.max(1, age - 13) + '+');
   set('footerYear', today.getFullYear());
 })();
 
@@ -261,17 +261,27 @@ window.addEventListener('scroll', () => {
 /* ── 15. CONTACT FORM SUBMIT ─────────────────────────── */
 const form = document.getElementById('contactForm');
 const submitBtn = document.getElementById('submitBtn');
-form && form.addEventListener('submit', async e => {
+form && form.addEventListener('submit', e => {
   e.preventDefault();
-  submitBtn.textContent = 'Sending…';
+  const name = document.getElementById('nameInput').value;
+  const email = document.getElementById('emailInput').value;
+  const subject = document.getElementById('subjectInput').value;
+  const message = document.getElementById('messageInput').value;
+
+  submitBtn.textContent = 'Opening Email...';
   submitBtn.disabled = true;
-  await new Promise(r => setTimeout(r, 1200));
-  submitBtn.textContent = '✅ Sent!';
-  submitBtn.style.background = '#22c55e';
-  form.reset();
+
+  const mailtoLink = `mailto:chamikagamage902@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent("Name: " + name + "\nEmail: " + email + "\n\n" + message)}`;
+
   setTimeout(() => {
-    submitBtn.textContent = 'Send Message ✉️';
-    submitBtn.style.background = '';
-    submitBtn.disabled = false;
-  }, 3000);
+    window.location.href = mailtoLink;
+    submitBtn.textContent = '✅ Email Ready!';
+    submitBtn.style.background = '#22c55e';
+    form.reset();
+    setTimeout(() => {
+      submitBtn.textContent = 'Send Message ✉️';
+      submitBtn.style.background = '';
+      submitBtn.disabled = false;
+    }, 4000);
+  }, 800);
 });
