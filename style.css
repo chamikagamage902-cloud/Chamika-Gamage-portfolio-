@@ -344,6 +344,16 @@ ul {
   color: #fff;
 }
 
+.soc-btn.wa {
+  background: #25D366;
+  color: #fff;
+}
+
+.soc-btn.fb {
+  background: #1877F2;
+  color: #fff;
+}
+
 .soc-btn:hover {
   transform: scale(1.15);
 }
